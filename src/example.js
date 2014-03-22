@@ -6,8 +6,8 @@
 var Promise = require("ypromise");
 var array = [1, 2, 3, 4, 5];
 setTimeout(function () {
-    array;//=> [1, 2, 3, 4, 5]
-});
+    array;//=> [0, 2, 3, 4, 5]
+}, 16);
 // return [p(ms),p(ms)]
 function promisedMapping(ary) {
     function timerPromisefy(value) {
@@ -23,7 +23,6 @@ function promisedMapping(ary) {
 
 var promisedArray = promisedMapping(array);
 Promise.all(promisedArray).then(function (values) {
-    console.log(values);
     values[0];// => "1-promised"
 }).catch(function(error){
     console.log(error.message);
