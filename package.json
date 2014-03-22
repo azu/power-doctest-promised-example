@@ -1,0 +1,28 @@
+{
+  "name": "power-doctest-promised-example",
+  "description": "promise tests.",
+  "version": "0.0.1",
+  "repository": {
+    "url": "git://github.com/azu/power-doctest-promised-example.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
+  "directories": {
+    "test": "test/"
+  },
+  "author": "azu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azu/power-doctest-promised-example/issues"
+  },
+  "devDependencies": {
+    "power-doctest": "^0.3.0",
+    "gulp-power-doctest": "^0.1.4",
+    "gulp": "^3.5.6"
+  },
+  "dependencies": {
+    "ypromise": "^0.2.3"
+  }
+}
